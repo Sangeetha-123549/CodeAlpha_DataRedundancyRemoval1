@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Success</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="result-card success">
+
+<h1>✅ Record Verified</h1>
+
+<p><b>ID:</b> {{ record_id }}</p>
+
+<p><b>Name:</b> {{ name }}</p>
+
+<p><b>Email:</b> {{ email }}</p>
+
+<p><b>Phone:</b> {{ phone }}</p>
+
+<p><b>Date:</b> {{ date }}</p>
+
+<p class="message">
+Record stored successfully.
+No duplicate detected.
+</p>
+
+<a href="/" class="btn">
+Add Another Record
+</a>
+
+</div>
+
+</body>
+</html>
